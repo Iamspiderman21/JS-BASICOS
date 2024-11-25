@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+/*Paneles*/
+
+.contenedor{
+    display: flex;
+    width: 90vw;
+}
+
+.panel{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: white;
+    text-shadow: black 1px 0 10px;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+}
+
+.panel h3{
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.panel.active{
+    flex: 5;
+}
+
+.panel.active h3{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media(max-width: 480px){
+    .contenedor{
+        width: 100vw;
+    }
+}
+
+/*IMAGEN DE LAS CARTAS*/
+
+#Validation{
+    background-image: url('https://vectralis.com/wp-content/uploads/2024/05/FT-V-box-683x1024.png');
+}
+
+#Tester{
+    background-image: url('https://vectralis.com/wp-content/uploads/2024/05/FT-Tall-box-683x1024.png');
+}
+
+#Fixture{
+    background-image: url('https://vectralis.com/wp-content/uploads/2024/06/RF-fixture-vbox-1024x1024.png');
+}
+
+#Extended{
+    background-image: url('https://vectralis.com/wp-content/uploads/2024/05/ingun-fixture-vbox-1024x1024.png');
+}
+
+#Custom{
+    background-image: url('https://vectralis.com/wp-content/uploads/2024/05/Speedbox-3-4-731x1024.png');
+}
+
+#Ingun{
+    background-image: url('https://vectralis.com/wp-content/uploads/2024/05/custom-fixture-vbox.png');
+}
+
